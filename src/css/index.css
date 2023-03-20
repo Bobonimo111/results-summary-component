@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    background-color: brown;
+
+    font-size: 18px;
+
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+:root {
+    --your-result-background: blue;
+    --title-color: white;
+    --Dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+.principal_conteiner {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.your_result {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--your-result-background);
+    border-radius: 0 0 30px 30px;
+    padding: 20px 40px;
+}
+
+.your_result>.title {
+    margin: 20px;
+
+}
+
+.your_result>div {
+    margin: 0;
+    text-align: center;
+}
+
+.title {
+    color: var(--title-color);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.ratting_circle {
+    width: 150px;
+    height: 150px;
+    background-color: blueviolet;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.ratting_circle>div:first-child {
+    color: aliceblue;
+    font-size: 60px;
+    font-weight: 800;
+}
+
+.ratting_circle>div:last-child {
+    color: var(--Dark-gray-blue);
+}
+
+#rank {
+    font-size: 30px;
+    font-weight: 700;
+}
